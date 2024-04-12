@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link css-->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Link iconos-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Login y Registro</title>
 </head>
@@ -28,7 +31,6 @@
             <i class="uil uil-times form_close"></i>
 
             <!-- Login -->
-            
             <div class="form login-form">
                 <form action="#">
                     <h2>Login</h2>
@@ -39,7 +41,7 @@
                     </div>
 
                     <div class="input_box">
-                        <input type="email" placeholder="Ingresa tu contraseña" required>
+                        <input type="password" placeholder="Ingresa tu contraseña" required>
                         <i class="uil uil-lock password"></i>
                         <i class="uil uil-eye-slash pw_hide"></i>
                     </div>
@@ -59,7 +61,6 @@
             </div>
 
             <!-- Registro -->
-
             <div class="form signup_form">
                 <form action="#">
                     <h2>Registro</h2>
@@ -69,7 +70,20 @@
                         <i class="uil uil-envelope-alt email"></i>
                     </div>
 
+                    <div class="input_box">
+                        <input type="password" placeholder="Ingresa tu contraseña" required>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <div class="input_box">
+                        <input type="password" placeholder="Confirmar contraseña" required>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
                     
+                    <button class="button">Registrarse</button>
+                    <div class="login_signup">¿Tienes una cuenta?<a href="#" id="login">Login</a></div>
                 </form>
             </div>
         </div>
