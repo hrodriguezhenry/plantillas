@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+
+    <!-- Link css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <header>Formulario de Registro</header>
+
+        <form action="#" class="form">
+
+            <div class="input-box">
+                <label>Nombre Completo</label>
+                <input type="text" placeholder="Ingresa el nombre completo" required>
+            </div>
+
+            <div class="input-box">
+                <label>Email</label>
+                <input type="text" placeholder="Ingresa el Email" required>
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Número de Teléfono</label>
+                    <input type="number" placeholder="Ingresa el número de teléfono" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Fecha de nacimiento</label>
+                    <input type="date" placeholder="Ingresa la fecha de nacimiento" required>
+                </div>
+            </div>
+            
+            <div class="gender-box">
+                <h3>Genero</h3>
+
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" checked>
+                        <label for="check-male">Masculino</label>
+                    </div>
+
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" checked>
+                        <label for="check-female">Femenino</label>
+                    </div>
+
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender" checked>
+                        <label for="check-other">Prefiero no decirlo</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box address">
+                <label>Dirección</label>
+                <input type="text" placeholder="Ingresa Dirección" required>
+                <input type="text" placeholder="Ingresa Dirección línea 2" required>
+
+                <div class="column">
+
+                    <div class="select-box">
+                        <select>
+                            <option hidden>País</option>
+                            <option>USA</option>
+                            <option>México</option>
+                            <option>India</option>
+                            <option>Colombia</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="Ingresa tu ciudad" required>
+                </div>
+
+                <div class="column">
+                    <input type="text" placeholder="Ingresa tu región" required>
+                    <input type="number" placeholder="Ingresa tu Código postal" required>
+                </div>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
