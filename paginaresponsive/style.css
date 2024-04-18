@@ -1,0 +1,74 @@
+/* Google font - Poppins */
+@import url("https:fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Nunito", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --colorPrincipal: #00B9C5;
+    --colorTexto: #fff;
+    --colorFondo: #151313;
+    --fuenteGrande: 3.2rem;
+    --fuente-h2: 1.30rem;
+    --fuente-p: 0.9rem;
+}
+::selection{
+    background: var(--colorPrincipal);
+    color: #fff;
+}
+body{
+    color: var(--colorTexto);
+    background: var(--colorFondo);
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 160px;
+    background-color: var(--colorFondo);
+}
+.logo{
+    color: var(--colorPrincipal);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.navegacion{
+    display: flex;
+}
+.navegacion a{
+    color: var(--colorTexto);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.navegacion a:hover{
+    color: var(--colorPrincipal);
+    transition: 0.4s;
+}
+#icono-menu{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 95px 13%;
+}
+.inicio{
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+}
