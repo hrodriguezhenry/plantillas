@@ -72,3 +72,36 @@ section{
     gap: 1.5rem;
     align-items: center;
 }
+.img-inicio img{
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+}
+.txt-inicio h1{
+    font-size: var(--fuenteGrande);
+    color: var(--colorPrincipal);
+}
+.txt-inicio h2{
+    font-size: var(--fuente-h2);
+    margin: 1rem 0 2rem;
+
+}
+.boton{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--colorPrincipal);
+    color: #fff;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.boton:hover{
+    transform: scale(1.1) translateY(10px);
+    transition: 0.4s ease-in-out;
+}
+.sobreNosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2.5rem;
+    align-items: center;
+}
