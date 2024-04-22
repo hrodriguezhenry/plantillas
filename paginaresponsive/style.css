@@ -105,3 +105,54 @@ section{
     gap: 2.5rem;
     align-items: center;
 }
+.sobreN-img img{
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+.sobreN-txt span{
+    color: var(--colorPrincipal);
+    font-weight: bold;
+}
+.sobreN-txt h2{
+    font-size: var(--fuente-h2);
+}
+.sobreN-txt p{
+    margin: 0.8rem 0 1.8rem;
+}
+.titulo{
+    text-align: center;
+}
+.titulo span{
+    color: var(--colorPrincipal);
+    font-weight: bold;
+}
+.titulo h2{
+    font-size: var(--fuente-h2);
+}
+.contenedor-menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 2rem;
+    align-items: center;
+}
+.contenido{
+    position: relative;
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #feeee7;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.contenedor-img{
+    width: 220px;
+    height: 220px;
+}
+.contenedor-img img{
+    width: 100%;
+    height: 100%;
+}
