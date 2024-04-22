@@ -1,5 +1,5 @@
 /* Google font - Poppins */
-@import url("https:fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https:fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;900&display=swap");
 
 *{
     margin: 0;
@@ -145,14 +145,24 @@ section{
     align-items: center;
     justify-content: center;
     background: #feeee7;
-    padding: 2rem;
+    padding: 20px;
     border-radius: 0.5rem;
 }
-.contenedor-img{
+.contenido-img{
     width: 220px;
     height: 220px;
 }
-.contenedor-img img{
+.contenido-img img{
     width: 100%;
     height: 100%;
+}
+.contenido h2{
+    font-size: 1.4rem;
+    color: var(--colorFondo);
+}
+.contenido h3{
+    color: var(--colorFondo);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px 0 10px;
 }
