@@ -166,3 +166,18 @@ section{
     font-weight: 400;
     margin: 4px 0 10px;
 }
+.contenido span{
+    font-size: var(--fuente-p);
+    color: var(--colorPrincipal);
+    font-weight: bold;
+}
+.contenido i{
+    background: var(--colorPrincipal);
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 7px 10px;
+    border-radius: 0 0.5rem 0 0.5rem;
+}
