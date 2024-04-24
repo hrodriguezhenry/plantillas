@@ -18,7 +18,7 @@
     --fuente-h2: 1.30rem;
     --fuente-p: 0.9rem;
 }
-::selection{
+*::selection{
     background: var(--colorPrincipal);
     color: #fff;
 }
@@ -100,6 +100,7 @@ section{
     transition: 0.4s ease-in-out;
 }
 .sobreNosotros{
+    min-height: 90vh;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 2.5rem;
@@ -131,6 +132,7 @@ section{
     font-size: var(--fuente-h2);
 }
 .contenedor-menu{
+    min-height: 90vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
     gap: 2rem;
@@ -180,4 +182,37 @@ section{
     cursor: pointer;
     padding: 7px 10px;
     border-radius: 0 0.5rem 0 0.5rem;
+}
+.contenedor-servicios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.servicios{
+    text-align: center;
+    padding: 20px 30px;
+}
+.servicios img{
+    width: 130px;
+}
+.servicios h3{
+    margin: 4px 0 10px;
+    color: var(--colorPrincipal);
+    font-size: 1.3rem;
+}
+.servicios p{
+    line-height: 1.7;
+}
+.cta{
+    background: #feeee7;
+    padding: 70px 0;
+    text-align: center;
+    width: 66%;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+.cta h2{
+    font-size: 2rem;
+    /* color: ; */
 }
