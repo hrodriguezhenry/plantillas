@@ -184,6 +184,7 @@ section{
     border-radius: 0 0.5rem 0 0.5rem;
 }
 .contenedor-servicios{
+    height: 90vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
     gap: 2rem;
@@ -194,7 +195,8 @@ section{
     padding: 20px 30px;
 }
 .servicios img{
-    width: 130px;
+    /* width: 130px; */
+    height: 130px;
 }
 .servicios h3{
     margin: 4px 0 10px;
@@ -214,5 +216,6 @@ section{
 }
 .cta h2{
     font-size: 2rem;
-    /* color: ; */
+    color: var(--colorFondo);
+    
 }
