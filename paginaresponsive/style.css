@@ -62,11 +62,11 @@ header{
     display: none;
 }
 section{
+    min-height: 90vh;
     padding: 95px 13%;
 }
 .inicio{
     width: 100%;
-    min-height: 90vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -100,7 +100,6 @@ section{
     transition: 0.4s ease-in-out;
 }
 .sobreNosotros{
-    min-height: 90vh;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 2.5rem;
@@ -132,7 +131,6 @@ section{
     font-size: var(--fuente-h2);
 }
 .contenedor-menu{
-    min-height: 90vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
     gap: 2rem;
@@ -184,7 +182,6 @@ section{
     border-radius: 0 0.5rem 0 0.5rem;
 }
 .contenedor-servicios{
-    height: 90vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
     gap: 2rem;
@@ -195,7 +192,6 @@ section{
     padding: 20px 30px;
 }
 .servicios img{
-    /* width: 130px; */
     height: 130px;
 }
 .servicios h3{
@@ -217,5 +213,79 @@ section{
 .cta h2{
     font-size: 2rem;
     color: var(--colorFondo);
-    
+    margin-bottom: 30px;
+}
+.contenidoFinal{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    padding: 1opx 0;
+}
+.links{
+    width: 25%;
+}
+.links h4{
+    font-size: 1.2rem;
+    color: var(--colorPrincipal);
+    margin-bottom: 25px;
+    position: relative;
+}
+.links h4::before{
+    content: " ";
+    position: absolute;
+    font-size: 1.2rem;
+    color: var(--colorTexto);
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background-color: var(--colorPrincipal);
+}
+.links ul li:not(:last-child){
+    margin-bottom: 15px;
+}
+.links ul li a{
+    color: #9897a9;
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: 0.4s;
+    font-weight: 600;
+}
+.links ul li a:hover{
+    color: var(--colorTexto);
+    transform: translateX(-10px);
+}
+.links .redes{
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links .redes a{
+    height: 40px;
+    width: 40px;
+    background-color: var(--colorPrincipal);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.links .redes a:hover{
+    transform: scale(1.2);
+    color: var(--colorFondo);
+    background: var(--colorTexto);
+}
+@media (max-width: 1560px){
+    header{
+        padding: 15px 40px;
+    }
+}
+@media (max-width: 1140px){
+    section{
+        padding: 50px;
+    }
 }
