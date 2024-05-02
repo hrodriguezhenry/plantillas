@@ -288,4 +288,52 @@ section{
     section{
         padding: 50px;
     }
+    #icono-menu{
+        display: initial;
+        color: var(--colorTexto);
+    }
+    header .navegacion{
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #151313;
+        transition: 0.4.s;
+    }
+    header .navegacion.active{
+        top: 70px;
+    }
+
+    .navegacion a{
+        padding: 1.5rem;
+        display: block;
+    }
+    .links{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 720px){
+    header{
+        padding: 10px 16px;
+    }
+    .inicio,
+    .sobreNosotros{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .sobreN-img{
+        order: 2;
+    }
+
+    section{
+        padding: 100px 7%;
+    }
+}
+@media (max-width: 575){
+    .links{
+        width: 100%;
+    }
 }
