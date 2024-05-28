@@ -34,21 +34,11 @@ a{
 .button{
     color: #fff;
 }
-.home{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-image: url("fondo.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 .nav_logo{
     font-size: 25px;
 }
 .nav_item{
     column-gap: 25px;
-    
 }
 .nav_link:hover{
     color: #d9d9d9;
@@ -63,6 +53,15 @@ a{
 }
 .button:active{
     transform: scale(0.95);
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .home::before{
     content: "";
