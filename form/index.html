@@ -9,119 +9,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="container">
-
-        <form action="#" class="form">
+    <section class="booking" id="booking">
+        <form action="#" class="booking_form">
             <div class="column">
-                <div class="input-box">
+                <div class="input_box">
                     <label>Nombre</label>
                     <input type="text" placeholder="Ingresa tu nombre" required>
                 </div>
 
-                <div class="input-box">
+                <div class="input_box">
                     <label>Apellido</label>
                     <input type="text" placeholder="Ingresa tu apellido" required>
                 </div>
             </div>
                 
             <div class="column">
-                <div class="input-box">
+                <div class="input_box">
                     <label>Correo Electrónico</label>
                     <input type="email" placeholder="Ingresa tu correo electrónico" required>
                 </div>
 
-                <div class="input-box">
+                <div class="input_box">
                     <label>Número de Teléfono</label>
                     <input type="number" placeholder="Ingresa tu número de teléfono" required>
                 </div>
             </div>
-
-            <div class="input-box">
-                <label>Dispositivo</label>
-                <div class="select-box">
-                    <select>
-                        <option class="placeholder" selected disabled hidden>Escoge el dispositivo a adquirir</option>
-                        <option>GPS3G</option>
-                        <option>GPS4G</option>
-                        <option>GPS4G Motocicleta</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="gender-box">
-                <h3>Genero</h3>
-
-                <div class="gender-option">
-                    <div class="gender">
-                        <input type="radio" id="check-male" name="gender" checked>
-                        <label for="check-male">Masculino</label>
-                    </div>
-
-                    <div class="gender">
-                        <input type="radio" id="check-female" name="gender" checked>
-                        <label for="check-female">Femenino</label>
-                    </div>
-
-                    <div class="gender">
-                        <input type="radio" id="check-other" name="gender" checked>
-                        <label for="check-other">Prefiero no decirlo</label>
-                    </div>
-                </div>
-            </div>
-            
             <div class="column">
-                <div class="input-box">
-                    <label>Fecha de nacimiento</label>
-                    <input type="date" placeholder="Ingresa la fecha de nacimiento" required>
-                </div>
-            </div>
-            
-            <div class="gender-box">
-                <h3>Genero</h3>
-
-                <div class="gender-option">
-                    <div class="gender">
-                        <input type="radio" id="check-male" name="gender" checked>
-                        <label for="check-male">Masculino</label>
-                    </div>
-
-                    <div class="gender">
-                        <input type="radio" id="check-female" name="gender" checked>
-                        <label for="check-female">Femenino</label>
-                    </div>
-
-                    <div class="gender">
-                        <input type="radio" id="check-other" name="gender" checked>
-                        <label for="check-other">Prefiero no decirlo</label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="input-box address">
-                <label>Dirección</label>
-                <input type="text" placeholder="Ingresa Dirección" required>
-                <input type="text" placeholder="Ingresa Dirección línea 2" required>
-
-                <div class="column">
-
-                    <div class="select-box">
+                <div class="input_box">
+                    <label>Dispositivo</label>
+                    <div class="select_box">
                         <select>
-                            <option hidden>País</option>
-                            <option>USA</option>
-                            <option>México</option>
-                            <option>India</option>
-                            <option>Colombia</option>
+                            <option class="teee" hidden>Escoge el dispositivo a adquirir</option>
+                            <option>GPS3G</option>
+                            <option>GPS4G</option>
+                            <option>GPS4G Motocicleta</option>
                         </select>
                     </div>
-                    <input type="text" placeholder="Ingresa tu ciudad" required>
                 </div>
 
-                <div class="column">
-                    <input type="text" placeholder="Ingresa tu región" required>
-                    <input type="number" placeholder="Ingresa tu Código postal" required>
+                <div class="input_box">
+                    <label>Cantidad</label>
+                    <input type="number" placeholder="Ingresa la cantidad de dispositivos" required>
                 </div>
             </div>
-            <button>Enviar</button>
+
+            <div class="input_box">
+                <label>Dirección</label>
+                <input type="text" placeholder="Ingresa la dirección de instalación">
+            </div>
+
+            <div class="column">
+                <div class="input_box">
+                    <label>Fecha a Reservar</label>
+                    <input type="date" required>
+                </div>
+            </div>
+
+            <div class="button_container">
+                <button type="submit">Enviar</button>
+            </div>
         </form>
     </section>
 </body>

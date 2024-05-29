@@ -1,11 +1,13 @@
-/* Google font - Poppins */
+/* Fuente de Google - Poppins */
 @import url("https:fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
+/* Estilos generales al DOM */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	font-size:16px;
+	margin:0;
 }
 body{
     min-height: 100vh;
@@ -15,104 +17,71 @@ body{
     padding: 20px;
     background-color: #092635;
 }
-.container{
+.booking{
     position: relative;
-    max-width: 700px;
+    max-width: 750px;
     width: 100%;
     border-radius: 8px;
     background: #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     padding: 25px;
 }
-
-.form .input-box{
+.booking_form .input_box{
     width: 100%;
     margin-top: 20px;
 }
-.input-box label{
+.booking_form .input_box label{
     color: #333;
 }
-.form :where(.input-box input, .select-box){
+.booking_form :where(.booking_form .input_box input, .select_box){
     position: relative;
     height: 50px;
     width: 100%;
     outline: none;
     font-size: 1rem;
-    color: #707070;
+    color: #000;
     margin-top: 8px;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 0 15px;
 }
-.input-box input:focus{
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+.booking_form .input_box input:focus{
+	border-color: #007bff;
 }
-.form .column{
+.booking_form .column{
     display: flex;
     column-gap: 15px;
 }
-.form .gender-box{
-    margin-top: 20px;
-}
-.gender-box h3{
-    color: #333;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-top: 8px;
-}
-.form :where(.gender-option, .gender){
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
-    flex-wrap: wrap;
-}
-.form .gender{
-    column-gap: 5px;
-}
-.gender input{
-    accent-color: rba(26, 19, 55);
-}
-.form :where(.gender input, .gender label){
-    cursor: pointer;
-}
-.gender label{
-    color: #707070
-}
-.address :where(input, .select-box){
-    margin-top: 15px;
-}
-.select-box select{
+.select_box select{
     height: 100%;
     width: 100%;
     outline: none;
     border: #707070;
+    color: #000;
     font-size: 1rem;
 }
-.select-box option.placeholder {
-    color: gray; /* Color del "placeholder" */
-} 
-.form button{
+.booking_form .button_container {
+    text-align: center;
+}
+.booking_form button{
+	background-color: #007bff;
+	margin-top: 30px;
     height: 55px;
-    width: 100%;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-top: 30px;
+	width: 50%;
+	padding: 10px 0;
+	border-radius: 10px;
     border: none;
     cursor: pointer;
-    transition: all 0.2s ease;
-    background-color: #092635;
+    color: #fff;
+    font-size: 19px;
 }
-.form button:hover{
-    background-color: #0d3b52;
-}
+
 /* Responsive */
-@media screen and (max-width: 665px) {
-    .form .column{
+@media screen and (max-width: 750px) {
+    .booking{
+        width: 500px;
+    }
+    .booking_form .column{
         flex-wrap: wrap;
     }
-    .form :where(.gender-option, .gender){
-        row-gap: 15px;
-    }
-    
 }
